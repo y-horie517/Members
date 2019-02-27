@@ -1,0 +1,25 @@
+<div class="body clearfix">
+	<h1>メンバー一覧</h1>
+
+	<div>
+		<div class="btn">１期生</div>
+		<div class="btn">２期生</div>
+		<div class="btn">３期生</div>
+		<div class="btn">４期生</div>
+	</div>
+
+	<br>
+	<div class="members">
+		<% @members.each do |member| %>
+
+		<% if member.generation >= 1 %>
+			<div class="mem_content">
+				<%= image_tag member.image_id, :size =>'110x130', class: "mem_img" %>
+				<br>
+				<p class="mem_name"><%= member.name %></p>
+				<p class="mem_kana"><%= member.kana %></p>
+			</div>
+		<% end %>
+	<% end %>
+	</div>
+</div>

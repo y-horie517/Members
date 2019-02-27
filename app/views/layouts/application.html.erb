@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Members</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="headerbox">
+        <div class="nogilogo"></div>
+        <div class="nogititle">aaaaaaa<img src="logo.jpeg" alt=""></div>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="" title="" class="nav-list-link"> ニュース </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" title="" class="nav-list-link"> メンバー </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" title="" class="nav-list-link"> 動画 </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" title="" class="nav-list-link"> ブログ </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" title="" class="nav-list-link"> ディスコグラフィー </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <%= yield %>
+
+    <footer>
+      乃木坂４６
+    </footer>
+  </body>
+</html>
